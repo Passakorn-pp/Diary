@@ -8,7 +8,7 @@ import androidx.room.RoomDatabase;
 
 @Database(entities = {Diary.class}, exportSchema = false, version = 1)
 public abstract class MyDatabase extends RoomDatabase {
-    private static final String DB_NAME = "restaurants.db";
+    private static final String DB_NAME = "diary.db";
 
     public abstract DiaryDao DiaryDao();
 

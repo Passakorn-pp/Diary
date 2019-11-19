@@ -17,7 +17,7 @@
         android:layout_marginRight="32dp"
         android:layout_marginBottom="32dp"
         android:ems="10"
-        android:hint="เรื่อง"
+        android:hint="รายละเอียด"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/add_button"
         app:layout_constraintEnd_toEndOf="parent"
@@ -66,9 +66,11 @@
 
     <Button
         android:id="@+id/add_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="80dp"
+        android:layout_height="33dp"
+        android:background="@drawable/wood3"
         android:text="บันทึก"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

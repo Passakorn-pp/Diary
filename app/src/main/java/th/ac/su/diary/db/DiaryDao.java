@@ -9,9 +9,9 @@ import java.util.List;
 @Dao
 public interface DiaryDao {
 
-    @Query("SELECT * FROM restaurants")
+    @Query("SELECT * FROM diary")
     List<Diary> getAll();
 
     @Insert
-    void insertRestaurants(Diary restaurants);
+    void insertDiary(Diary diary);
 }

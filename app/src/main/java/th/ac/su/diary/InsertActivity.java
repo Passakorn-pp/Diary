@@ -24,17 +24,17 @@ public class InsertActivity extends AppCompatActivity {
         addButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                EditText nameT = findViewById(R.id.add_Name);
-                String name = nameT.getText().toString();
+                EditText nameText = findViewById(R.id.add_Name);
+                String name = nameText.getText().toString();
 
-                EditText typrT = findViewById(R.id.add_Detail);
-                String type = typrT.getText().toString();
+                EditText descriptionText = findViewById(R.id.add_Detail);
+                String type = descriptionText.getText().toString();
 
 
                 Diary diary = new Diary(0,name,type);
 
                 DiaryRepository repo = new DiaryRepository(InsertActivity.this);
-                repo.insertRestautants(diary, new DiaryRepository.InsertCallback() {
+                repo.insertDiary(diary, new DiaryRepository.InsertCallback() {
                     @Override
                     public void onInsertSuccess() {
                         finish();

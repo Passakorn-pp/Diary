@@ -67,7 +67,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                 public void onClick(View v) {
                     Intent intent = new Intent(mContext, DetailActivity.class);
                     intent.putExtra("name", diary.name);
-                    intent.putExtra("type",diary.type);
+                    intent.putExtra("type",diary.description);
                     mContext.startActivity(intent);
                 }
             });

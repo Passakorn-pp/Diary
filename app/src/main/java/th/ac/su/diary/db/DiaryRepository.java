@@ -24,7 +24,7 @@ public class DiaryRepository {
         getTask.execute();
     }
 
-    public void insertRestautants(Diary item, InsertCallback callback) {
+    public void insertDiary(Diary item, InsertCallback callback) {
         InsertTask insertTask = new InsertTask(mContext, callback);
         insertTask.execute(item);
     }
@@ -71,7 +71,7 @@ public class DiaryRepository {
         @Override
         protected Void doInBackground(Diary... ledgerItems) {
             MyDatabase db = MyDatabase.getInstance(mContext);
-            db.DiaryDao().insertRestaurants(ledgerItems[0]);
+            db.DiaryDao().insertDiary(ledgerItems[0]);
             return null;
         }
 

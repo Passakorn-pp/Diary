@@ -17,14 +17,13 @@ public class DetailActivity extends AppCompatActivity {
 
             Intent intent = getIntent();
             String name = intent.getStringExtra("name");
-            int image = intent.getIntExtra("image", 0);
             String type = intent.getStringExtra("type");
 
             TextView nameViewDetail = findViewById(R.id.Detail_Name_Text_View);
             nameViewDetail.setText(name);
 
-            TextView typeViewDetail = findViewById(R.id.Detail_text_View);
-            typeViewDetail.setText(type);
+            TextView descriptionViewDetail = findViewById(R.id.Detail_text_View);
+            descriptionViewDetail.setText(type);
 
 
 
