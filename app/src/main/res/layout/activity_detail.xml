@@ -4,41 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFF9C4"
     tools:context=".DetailActivity">
-
-    <ImageView
-        android:id="@+id/Detail_image_View"
-        android:layout_width="246dp"
-        android:layout_height="188dp"
-        android:layout_marginBottom="32dp"
-        app:layout_constraintBottom_toTopOf="@+id/Detail_text_View"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Detail_Name_Text_View"
-        app:srcCompat="@drawable/book1" />
 
     <TextView
         android:id="@+id/Detail_Name_Text_View"
-        android:layout_width="241dp"
-        android:layout_height="45dp"
-        android:layout_marginBottom="32dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/Detail_image_View"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/wood2"
+        android:gravity="start|center_vertical"
+        android:text="TextViewgfghfghfghfghfghfgfghfghfghfghfghfghfghfg"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/Detail_text_View"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.19999999"
+        app:layout_constraintVertical_bias="0.39"
         app:layout_constraintVertical_chainStyle="packed" />
 
     <TextView
         android:id="@+id/Detail_text_View"
-        android:layout_width="172dp"
-        android:layout_height="43dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintHorizontal_bias="0.066"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Detail_image_View" />
+        app:layout_constraintTop_toBottomOf="@+id/Detail_Name_Text_View" />
 </androidx.constraintlayout.widget.ConstraintLayout>

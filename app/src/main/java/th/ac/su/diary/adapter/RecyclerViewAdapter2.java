@@ -17,12 +17,12 @@ import th.ac.su.diary.DetailActivity;
 import th.ac.su.diary.R;
 import th.ac.su.diary.db.Diary;
 
-public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder> {
+public class RecyclerViewAdapter2 extends RecyclerView.Adapter<RecyclerViewAdapter2.MyViewHolder> {
     private Context mContext;
     private int mResource;
     private List<Diary> mRestaurantsList;
 
-    public RecyclerViewAdapter(Context mContext, int mResource, List<Diary> mRestaurantsList) {
+    public RecyclerViewAdapter2(Context mContext, int mResource, List<Diary> mRestaurantsList) {
         this.mContext = mContext;
         this.mResource = mResource;
         this.mRestaurantsList = mRestaurantsList;

@@ -23,9 +23,6 @@ public class DetailActivity extends AppCompatActivity {
             TextView nameViewDetail = findViewById(R.id.Detail_Name_Text_View);
             nameViewDetail.setText(name);
 
-            ImageView imageViewDetail = findViewById(R.id.Detail_image_View);
-            imageViewDetail.setImageResource(image);
-
             TextView typeViewDetail = findViewById(R.id.Detail_text_View);
             typeViewDetail.setText(type);
 
